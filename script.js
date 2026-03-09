@@ -140,3 +140,31 @@ function closeModal(){
 document.getElementById("modal").classList.add("hidden");
 
 }
+
+// SEARCH FUNCTION
+const searchInput = document.getElementById("search");
+
+if(searchInput){
+
+searchInput.addEventListener("input",function(){
+
+const value = this.value.toLowerCase();
+
+const filtered = issues.filter(issue=>
+issue.title.toLowerCase().includes(value)
+);
+
+loadIssues(filtered);
+
+});
+
+}
+
+// LOAD ISSUES ON PAGE LOAD
+window.onload = ()=>{
+
+if(document.getElementById("issuesContainer")){
+loadIssues(issues);
+}
+
+};
