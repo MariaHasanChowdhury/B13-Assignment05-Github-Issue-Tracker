@@ -106,6 +106,15 @@ ${issue.createdAt}
 // FILTER TABS
 function filterIssues(type){
 
+// ACTIVE TAB CHANGE
+document.querySelectorAll(".tabBtn").forEach(btn=>{
+btn.classList.remove("activeTab");
+});
+
+document
+.querySelector(`[data-type="${type}"]`)
+.classList.add("activeTab");
+
 if(type === "all"){
 loadIssues(issues);
 return;

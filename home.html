@@ -7,6 +7,19 @@
     <title>Issues Tracker</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+     .tabBtn{
+         padding:6px 14px;
+         border-radius:6px;
+         background:#f3f4f6;
+     }
+
+     .activeTab{
+         background:#7c3aed;
+         color:white;
+     }
+    </style>
 </head>
 <body class="bg-gray-100">
     <!-- Navbar -->
@@ -32,55 +45,29 @@
 
      </nav>
 
-     <!-- Tabs -->
 
-     <div class="max-w-6xl mx-auto mt-8">
+    <!-- Tabs -->
 
-        
-         <div class="bg-white p-4 rounded-lg shadow">
+<div class="max-w-6xl mx-auto mt-8">
 
-             <div class="flex gap-3 mb-6">
+    <div class="bg-white p-4 rounded-lg shadow">
 
-             <button onclick="filterIssues('all')" class="tabBtn activeTab">All</button>
+        <div class="flex gap-3 mb-6">
 
-             <button onclick="filterIssues('open')" class="tabBtn">
-             Open
-             </button>
+            <button onclick="filterIssues('all')" class="tabBtn activeTab" data-type="all">
+            All
+            </button>
 
-             <button onclick="filterIssues('closed')" class="tabBtn">
-             Closed
-             </button>
+            <button onclick="filterIssues('open')" class="tabBtn" data-type="open">
+            Open
+            </button>
 
-             </div>
+            <button onclick="filterIssues('closed')" class="tabBtn" data-type="closed">
+            Closed
+            </button>
 
-             <div class="flex justify-between items-center mb-6">
-
-                 <div>
-                     <h3 class="font-semibold text-lg">
-                     <span id="issueCount">0</span> Issues
-                     </h3>
-
-                     <p class="text-gray-500 text-sm">
-                     Track and manage your project issues
-                     </p>
-
-                 </div>
-
-                 <div class="flex gap-4 text-sm">
-
-                     <div class="flex items-center gap-1">
-                         <div class="w-2 h-2 bg-green-500 rounded"></div>
-                         Open
-                         </div>
-
-                         <div class="flex items-center gap-1">
-                             <div class="w-2 h-2 bg-purple-600 rounded"></div>
-                     Closed
-                     </div>
-
-                 </div>
-
-             </div>
+        </div>
+             
 
              <!-- Issues Grid -->
 
