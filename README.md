@@ -11,6 +11,7 @@
 ## Answer:
 
 The spread operator expands elements of an array or object into individual values.
+
 Example:
     const nums = [1,2,3];
     console.log(...nums); // 1 2 3
@@ -28,14 +29,16 @@ Example:
 
 ## Answer:
 An arrow function is a shorter way to write a function in JavaScript.
-Example:
+- Example:
+
     const add = (a,b) => a + b; 
 
 ### 5. What are template literals?
 
 ## Answer:
 Template literals allow you to embed variables inside strings using backticks ( ).
-Example:
+- Example:
+
    let name = "Maria";
    console.log(`Hello ${name}`);
    Output:     Hello Maria
