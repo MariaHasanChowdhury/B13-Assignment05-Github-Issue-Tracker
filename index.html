@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>GitHub Issues Tracker</title>
-<script src="https://cdn.tailwindcss.com"></script>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>GitHub Issues Tracker</title>
+     
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 
-<div class="bg-white w-[380px] p-8 rounded-xl shadow">
+     <div class="bg-white w-[380px] p-8 rounded-xl shadow">
 
-<div class="flex justify-center mb-4">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="w-14">
-</div>
+         <div class="flex justify-center mb-4">
+             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="w-14">
+         </div>
 
-<h2 class="text-center text-xl font-semibold">GitHub Issues Tracker</h2>
+         <h2 class="text-center text-xl font-semibold">GitHub Issues Tracker</h2>
 
-<p class="text-center text-gray-500 text-sm mb-6">
-Sign in to manage your issues
-</p>
+         <p class="text-center text-gray-500 text-sm mb-6">
+         Sign in to manage your issues
+         </p>
 
-<label class="text-sm">Username</label>
-<input id="username" type="text"
-class="border w-full p-2 rounded mt-1 mb-3"
-placeholder="Enter Username">
+         <label class="text-sm">Username</label>
+         <input id="username" type="text"
+         class="border w-full p-2 rounded mt-1 mb-3"
+         placeholder="Enter Username">
 
-<p class="text-xs text-purple-600 mb-2">Default: admin</p>
+         <p class="text-xs text-purple-600 mb-2">Default: admin</p>
 
-<label class="text-sm">Password</label>
-<input id="password" type="password"
-class="border w-full p-2 rounded mt-1 mb-3"
-placeholder="Enter Password">
+         <label class="text-sm">Password</label>
+         <input id="password" type="password"
+         class="border w-full p-2 rounded mt-1 mb-3"
+         placeholder="Enter Password">
 
-<p class="text-xs text-purple-600 mb-4">Default: admin123</p>
+         <p class="text-xs text-purple-600 mb-4">Default: admin123</p>
 
-<button onclick="login()"
-class="bg-purple-600 w-full text-white py-2 rounded-lg">
-Sign In
-</button>
+         <button onclick="login()"
+         class="bg-purple-600 w-full text-white py-2 rounded-lg">
+         Sign In
+         </button>
 
-<div class="text-center text-sm text-gray-400 mt-4">OR</div>
+         <div class="text-center text-sm text-gray-400 mt-4">OR</div>
 
-<div class="bg-gray-100 p-3 mt-3 rounded text-sm text-center">
-<p>Username: admin</p>
-<p>Password: admin123</p>
-</div>
+         <div class="bg-gray-100 p-3 mt-3 rounded text-sm text-center">
+         <p>Username: admin</p>
+         <p>Password: admin123</p>
+         </div>
 
-</div>
+     </div>
 
-<script src="script.js"></script>
+     <script src="script.js"></script>
 
 </body>
 </html>
