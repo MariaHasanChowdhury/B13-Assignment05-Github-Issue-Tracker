@@ -40,5 +40,7 @@ Template literals allow you to embed variables inside strings using backticks ( 
 - Example:
 
    let name = "Maria";
+
    console.log(`Hello ${name}`);
+   
    Output:     Hello Maria
